@@ -1,0 +1,212 @@
+header {
+  background: rgb(48, 48, 48);
+  ul {
+    display: flex;
+    margin: 0;
+    li {
+      list-style: none;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0.5rem 0.5rem;
+      color: whitesmoke;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        list-style: none;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0.5rem;
+      }
+    }
+  }
+}
+
+banner {
+  background-image: url("background.jpg");
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  .banner_text {
+    padding: 0 5rem;
+    align-self: center;
+    width: 40ch;
+    h3 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+}
+
+ad_body {
+  display: flex;
+  .ad_non_ad {
+    margin: 0.5rem 0.5rem;
+    border: black 2px solid;
+    background: teal;
+    flex: 1 1 80%;
+    display: flex;
+    flex-direction: column;
+    .upper {
+      display: flex;
+      flex-wrap: wrap;
+      .upper_items {
+        flex: 1 1 100px;
+        height: 100px;
+        min-width: 50px;
+        background: tomato;
+        margin: 0.5rem;
+        text-align: center;
+        font-weight: 700;
+      }
+    }
+  }
+  .ad {
+    flex: 1 1 20%;
+    margin: 0.5rem 0.5rem;
+    border: black 2px solid;
+    background: tomato;
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  ad_body {
+    flex-wrap: wrap;
+    .ad {
+      height: 20vh;
+    }
+  }
+}
+
+slide_list {
+  margin: 1rem 0.5rem;
+  display: flex;
+  .slider {
+    border: 2px solid black;
+    max-width: 80%;
+    flex: 1 1 80%;
+    background: teal;
+    img {
+      width: 100%;
+      padding: 0.5rem;
+      height: 30vh;
+      object-fit: cover;
+    }
+  }
+  .listings {
+    flex: 1 1 20%;
+    // max-width: 20%;
+    background: tomato;
+    .list_heading {
+      background: cadetblue;
+      font-size: 2rem;
+      font-weight: 800;
+      text-align: center;
+    }
+    .list {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  slide_list {
+    flex-wrap: wrap;
+    .slider {
+      max-width: 100%;
+      flex: 1 1 80%;
+      img {
+        height: calc(100vw / 2);
+      }
+    }
+  }
+}
+
+slide_video {
+  display: flex;
+  .video {
+    margin: 0.5rem 0.5rem;
+    border: black 2px solid;
+    flex: 1 1 80%;
+    background: cornflowerblue;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .slider {
+    margin: 0.5rem 0.5rem;
+    border: black 2px solid;
+    flex: 1 1 20%;
+    // background: crimson;
+    img {
+      width: 100%;
+      height: 20vh;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  slide_video {
+    flex-wrap: wrap;
+    .video {
+      flex: 1 1 80%;
+      height: 20vh;
+    }
+  }
+}
+
+footer {
+  background: grey;
+  height: 5vh;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+}
+
+footer {
+  .footer {
+    background: rgb(48, 48, 48);
+    padding: 1rem;
+    color: whitesmoke;
+    justify-content: space-between;
+    align-items: center;
+    // font-family: "Ubuntu", sans-serif;
+    min-height: 5vh;
+    .media_name {
+      margin-top: -1rem;
+      margin-left: auto;
+      width: max-content;
+      span {
+        margin-left: 5px;
+        font-size: 1rem;
+        color: goldenrod;
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    margin-left: auto;
+    flex-basis: content;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .copyright {
+      font-size: var(--descmobile);
+    }
+    .media_name span {
+      font-size: var(--descmobile);
+    }
+  }
+}
