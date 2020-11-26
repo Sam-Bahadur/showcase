@@ -56,9 +56,7 @@ function App() {
         </div>
       </slide_video>
       <footer>
-        <div className={style.footer}>
-          <div className={style.copyright}>pradeepk.com.np</div>
-        </div>
+        <div className={style.copyright}>ⓒ pradeepk.com.np</div>
       </footer>
     </>
   );

@@ -8,7 +8,16 @@ header {
       font-size: 1.5rem;
       font-weight: 700;
       margin: 0.5rem 0.5rem;
+      text-transform: capitalize;
       color: whitesmoke;
+      cursor: pointer;
+      transition: 0.2s ease-in-out all;
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+    :nth-child(1) {
+      margin-left: auto;
     }
   }
 }
@@ -18,10 +27,9 @@ header {
       display: flex;
       flex-direction: column;
       li {
-        list-style: none;
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin: 0.5rem;
+      }
+      :nth-child(1) {
+        margin-left: 0.5rem;
       }
     }
   }
@@ -56,9 +64,9 @@ ad_body {
       display: flex;
       flex-wrap: wrap;
       .upper_items {
-        flex: 1 1 100px;
+        flex: 1 1 150px;
         height: 100px;
-        min-width: 50px;
+        min-width: 100px;
         background: tomato;
         margin: 0.5rem;
         text-align: center;
@@ -141,7 +149,7 @@ slide_video {
     background: cornflowerblue;
     text-align: center;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 600git;
   }
   .slider {
     margin: 0.5rem 0.5rem;
@@ -165,48 +173,12 @@ slide_video {
 }
 
 footer {
-  background: grey;
-  height: 5vh;
-  font-size: 2rem;
-  text-align: center;
-  margin: 0;
-}
-
-footer {
-  .footer {
-    background: rgb(48, 48, 48);
-    padding: 1rem;
-    color: whitesmoke;
-    justify-content: space-between;
-    align-items: center;
-    // font-family: "Ubuntu", sans-serif;
-    min-height: 5vh;
-    .media_name {
-      margin-top: -1rem;
-      margin-left: auto;
-      width: max-content;
-      span {
-        margin-left: 5px;
-        font-size: 1rem;
-        color: goldenrod;
-      }
-    }
-  }
+  background: rgb(80, 80, 80);
   .copyright {
     text-align: center;
     color: whitesmoke;
     font-size: 1.2rem;
     line-height: 3rem;
-    margin-left: auto;
     flex-basis: content;
-  }
-
-  @media only screen and (max-width: 768px) {
-    .copyright {
-      font-size: var(--descmobile);
-    }
-    .media_name span {
-      font-size: var(--descmobile);
-    }
   }
 }
